@@ -1,0 +1,39 @@
+name: UHCTroll
+main: me.zabzabdoda.UHCTroll.UHCTroll
+version: 1.0
+api-version: 1.15
+author: zabzabdoda
+description: UHCTroll plugin
+commands:
+  troll:
+    description: Main command for UHCTroll.
+    usage: |
+           /troll <player>
+           Example: /troll zabzabdoda - opens the troll menu for zabzabdoda
+  creeper:
+    description: Spawns a creeper at your location if you have a point.
+    usage: |
+           /creeper <player>
+           Example: /creeper zabzabdoda - spawns a creeper at your location focused on zabzabdoda
+  fakeplayer:
+    description: Spawns a Fake Player at your location if you have a point.
+    usage: |
+           /fakeplayer <player>
+           Example: /fakeplayer zabzabdoda - spawns a Fake Player at your location with the name zabzabdoda
+  points:
+    description: checks your point value
+    usage: |
+           /points <on|off>
+           Example: /points off - turns off the messages when you get a point
+  sign:
+    description: spawns a sign
+    usage: |
+           /sign <string> <string> <string>
+           Example: /sign "Hi" "This is" "Text" - makes a sign with the 3 lines
+permissions:
+    troll.menu:
+        description: Allows you to spawn as a dragon
+        default: true
+    troll.expensive:
+        description: makes all your prices cost double
+        default: op
